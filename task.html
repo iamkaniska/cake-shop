@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cake Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="Moon"> 
+        <img src="mountains_back.png" id="mountain_behind">
+        <h2 id="text">Cake Shop</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountain_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>celebrate your special day with us</h2>
+        <p>
+            <img src ="doll2.png" id="doll2" alt="">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit.
+             Aut minus officiis nobis! Maxime
+             dicta totam voluptates cupiditate reprehenderit laudantium ipsa dolore, quos suscipit. 
+             Nisi provident, esse consequatur aspernatur aperiam 
+             <br><br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam est laboriosam sed excepturi. Et itaque, tempore eius rem quod incidunt error enim consequuntur officia, reiciendis dolor amet tempora voluptas.
+             <br><br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam suscipit a! Voluptate fuga laudantium itaque suscipit debitis dignissimos beatae nemo temporibus provident molestias. Obcaecati molestiae est placeat rerum alias aliquam nihil beatae unde magnam repellendus? A eius itaque ratione vitae cumque. Iusto, odio reprehenderit sed esse eos fugiat obcaecati.
+             <br><br>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum molestias distinctio velit repudiandae sapiente reprehenderit itaque nisi non tempora, ad fugit officia tempore repellat atque labore at cumque aperiam?
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit.
+         Aut minus officiis nobis! Maxime
+         dicta totam voluptates cupiditate reprehenderit laudantium ipsa dolore, quos suscipit. 
+         Nisi provident, esse consequatur aspernatur aperiam 
+         <br><br>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam est laboriosam sed excepturi. Et itaque, tempore eius rem quod incidunt error enim consequuntur officia, reiciendis dolor amet tempora voluptas.
+         <br><br>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam suscipit a! Voluptate fuga laudantium itaque suscipit debitis dignissimos beatae nemo temporibus provident molestias. Obcaecati molestiae est placeat rerum alias aliquam nihil beatae unde magnam repellendus? A eius itaque ratione vitae cumque. Iusto, odio reprehenderit sed esse eos fugiat obcaecati.
+         <br><br>
+         <hr>
+            </p>
+    </div>
+    <div class="task" >
+        <div>
+            <div >
+                <img src="cake/download (1).jpg" id="image" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="cake/download 2.jpg" id="image" alt="">
+        </div>
+        <div>
+            <div>
+                <img src="cake/download 3.jpg" id="image" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="cake/download 4.jpg" id="image" alt="">
+        </div>
+        <!-- <div>
+            <img src="cake/download 5.jpg" id="image" alt="">
+        </div> -->
+    
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let mountain_behind = document.getElementById('mountain_behind');
+        let Moon = document.getElementById('Moon');
+        let mountain_front = document.getElementById('mountain_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left=value * 0.25+'px';
+            mountain_behind.style.top=value * 0.5+'px';
+            Moon.style.top=value * 1.05+'px';
+            mountain_front.style.top=value * 0+'px';
+            text.style.marginRight=value * 4+'px';
+            text.style.marginTop=value * 1.5+'px';
+            btn.style.marginTop=value * 1.5+'px';
+            header.style.top=value * 0.5+'px';
+        })
+    </script>
+    
+</body>
+</html>
